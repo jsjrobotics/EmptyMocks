@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import nyc.jsjrobotics.emptymocks.R;
 import nyc.jsjrobotics.emptymocks.template.DefaultView;
-import nyc.jsjrobotics.emptymocks.template.IDefaultView;
 
 class CreateAccountView extends DefaultView {
     public CreateAccountView(final LayoutInflater inflater,
