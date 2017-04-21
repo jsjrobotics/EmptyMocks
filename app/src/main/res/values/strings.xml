@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">EmptyMocks</string>
+  <string name="login">Login</string>
+  <string name="select_subject">Select Subject</string>
+  <string name="onboarding_message">Take control of your future. Create your own opportunities for success. Learn at your own pace.</string>
+  <string name="select_course">Select Course</string>
+  <string name="course_selection">Course Selection</string>
+  <string name="course_overview">Course Overview</string>
+</resources>

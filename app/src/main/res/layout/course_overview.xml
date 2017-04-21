@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+  <TextView
+      style="@style/Text.UserNavigation"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentEnd="true"
+      android:text="@string/select_course"/>
+
+  <TextView
+      android:id="@+id/course_overview"
+      android:text="@string/course_overview"
+      style="@style/Text.UserNavigation"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:layout_centerHorizontal="true"/>
+
+  <TextView
+      android:id="@+id/course_title"
+      style="@style/Text.UserNavigation"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@id/course_overview"/>
+
+  <TextView
+      android:id="@+id/course_description"
+      style="@style/Text.UserNavigation"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@id/course_title"/>
+
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:layout_marginTop="20dp"
+      android:layout_below="@id/course_description">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerVertical="true"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerVertical="true"
+        android:layout_alignTop="@id/list1"
+        android:layout_toEndOf="@id/list1"/>
+  </RelativeLayout>
+
+
+</RelativeLayout>
