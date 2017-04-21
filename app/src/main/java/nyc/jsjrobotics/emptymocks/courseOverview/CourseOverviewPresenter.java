@@ -31,7 +31,8 @@ class CourseOverviewPresenter implements IDefaultViewModel<CourseOverviewView> {
                 "UNIT 3: Creating Forms",
                 "UNIT 4: Designing Applications",
                 "UNIT 5: Designing the User Interface",
-                "UNIT 6: Database Programming"
+                "UNIT 6: Database Programming",
+                "FINAL EXAM"
         );
     }
 

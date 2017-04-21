@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import java.util.List;
 import nyc.jsjrobotics.emptymocks.R;
 import nyc.jsjrobotics.emptymocks.template.DefaultView;
-import nyc.jsjrobotics.emptymocks.template.IDefaultView;
 
 class SelectCourseView extends DefaultView {
     private final RecyclerView list1;

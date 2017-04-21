@@ -2,11 +2,9 @@ package nyc.jsjrobotics.emptymocks.selectSubject;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 import nyc.jsjrobotics.emptymocks.R;
 import nyc.jsjrobotics.emptymocks.template.DefaultView;
-import nyc.jsjrobotics.emptymocks.template.IDefaultView;
 
 class SelectSubjectView extends DefaultView {
 

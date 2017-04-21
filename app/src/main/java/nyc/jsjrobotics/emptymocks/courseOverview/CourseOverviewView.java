@@ -10,8 +10,6 @@ import android.widget.TextView;
 import java.util.List;
 import nyc.jsjrobotics.emptymocks.R;
 import nyc.jsjrobotics.emptymocks.template.DefaultView;
-import nyc.jsjrobotics.emptymocks.template.IDefaultView;
-import org.w3c.dom.Text;
 
 class CourseOverviewView extends DefaultView {
     private final RecyclerView list1;
