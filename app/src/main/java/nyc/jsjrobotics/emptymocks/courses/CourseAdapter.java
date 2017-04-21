@@ -1,13 +1,13 @@
-package nyc.jsjrobotics.emptymocks.courseOverview;
+package nyc.jsjrobotics.emptymocks.courses;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
 import java.util.List;
 
-class CourseAdapter extends RecyclerView.Adapter<CourseViewHolder> {
+public class CourseAdapter extends RecyclerView.Adapter<CourseViewHolder> {
     private final List<String> data;
 
-    CourseAdapter(final List<String> data) {
+    public CourseAdapter(final List<String> data) {
         this.data = data;
     }
 

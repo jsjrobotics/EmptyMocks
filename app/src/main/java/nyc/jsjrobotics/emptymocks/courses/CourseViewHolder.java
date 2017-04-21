@@ -1,4 +1,4 @@
-package nyc.jsjrobotics.emptymocks.selectCourse;
+package nyc.jsjrobotics.emptymocks.courses;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;

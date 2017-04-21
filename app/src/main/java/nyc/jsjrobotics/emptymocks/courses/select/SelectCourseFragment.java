@@ -1,4 +1,4 @@
-package nyc.jsjrobotics.emptymocks.selectSubject;
+package nyc.jsjrobotics.emptymocks.courses.select;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -8,9 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import nyc.jsjrobotics.emptymocks.MvvmFragment;
 
-public class SelectSubjectFragment extends MvvmFragment<SelectSubjectMvvm> {
+public class SelectCourseFragment extends MvvmFragment<SelectCourseMvvm> {
 
-    @Override public SelectSubjectMvvm getArchitecture() {
-        return new SelectSubjectMvvm();
+    @Override
+    public SelectCourseMvvm getArchitecture() {
+        return new SelectCourseMvvm();
     }
 }

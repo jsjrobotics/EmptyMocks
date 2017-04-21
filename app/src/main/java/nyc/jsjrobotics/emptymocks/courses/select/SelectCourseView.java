@@ -1,4 +1,4 @@
-package nyc.jsjrobotics.emptymocks.selectCourse;
+package nyc.jsjrobotics.emptymocks.courses.select;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import java.util.List;
 import nyc.jsjrobotics.emptymocks.R;
+import nyc.jsjrobotics.emptymocks.courses.CourseAdapter;
 import nyc.jsjrobotics.emptymocks.template.DefaultView;
 
 class SelectCourseView extends DefaultView {

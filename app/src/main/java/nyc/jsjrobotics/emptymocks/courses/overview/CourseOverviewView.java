@@ -1,4 +1,4 @@
-package nyc.jsjrobotics.emptymocks.courseOverview;
+package nyc.jsjrobotics.emptymocks.courses.overview;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import java.util.List;
 import nyc.jsjrobotics.emptymocks.R;
+import nyc.jsjrobotics.emptymocks.courses.CourseAdapter;
 import nyc.jsjrobotics.emptymocks.template.DefaultView;
 
 class CourseOverviewView extends DefaultView {
@@ -16,6 +17,7 @@ class CourseOverviewView extends DefaultView {
     private final RecyclerView list2;
     private final TextView courseTitle;
     private final TextView courseDescription;
+    private final TextView courseInformation;
 
     CourseOverviewView(final LayoutInflater inflater,
                        final ViewGroup container,
@@ -28,6 +30,7 @@ class CourseOverviewView extends DefaultView {
         list2.setLayoutManager(new LinearLayoutManager(context));
         courseTitle = (TextView) getRoot().findViewById(R.id.course_title);
         courseDescription = (TextView) getRoot().findViewById(R.id.course_description);
+        courseInformation = (TextView) getRoot().findViewById(R.id.course_information);
     }
 
     @Override protected int getLayoutId() {
@@ -60,5 +63,9 @@ class CourseOverviewView extends DefaultView {
 
     void setList2Data(final List<String> data) {
         list2.setAdapter(new CourseAdapter(data));
+    }
+
+    void setCourseInformation(final String data) {
+        courseInformation.setText(data);
     }
 }

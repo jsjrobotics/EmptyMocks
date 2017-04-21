@@ -1,4 +1,4 @@
-package nyc.jsjrobotics.emptymocks.selectCourse;
+package nyc.jsjrobotics.emptymocks.courses.select;
 
 import java.util.Arrays;
 import java.util.List;

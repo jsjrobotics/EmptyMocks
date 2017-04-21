@@ -6,4 +6,6 @@
   <string name="select_course">Select Course</string>
   <string name="course_selection">Course Selection</string>
   <string name="course_overview">Course Overview</string>
+  <string name="enroll">Enroll</string>
+  <string name="create_my_account">Create My Account</string>
 </resources>

@@ -1,4 +1,4 @@
-package nyc.jsjrobotics.emptymocks.courseOverview;
+package nyc.jsjrobotics.emptymocks.courses.overview;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

@@ -1,4 +1,4 @@
-package nyc.jsjrobotics.emptymocks.courseOverview;
+package nyc.jsjrobotics.emptymocks.courses.overview;
 
 import java.util.Arrays;
 import java.util.List;
@@ -14,6 +14,12 @@ class CourseOverviewPresenter implements IDefaultViewModel<CourseOverviewView> {
         view.setCourseDescription(buildDescription());
         view.setList1Data(buildCourseListPart1());
         view.setList2Data(buildCourseListPart2());
+        view.setCourseInformation(buildCourseInformation());
+    }
+
+    private String buildCourseInformation() {
+        return "Course Length: 10 hours\n"+
+                "Grades: 9 - 10";
     }
 
     private String buildTitle() {

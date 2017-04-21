@@ -10,7 +10,7 @@
       style="@style/Text.UserNavigation"
       android:layout_alignParentBottom="true"
       android:layout_alignParentEnd="true"
-      android:text="@string/select_course"/>
+      android:text="@string/enroll"/>
 
   <TextView
       android:id="@+id/course_overview"
@@ -43,11 +43,19 @@
       android:layout_marginTop="20dp"
       android:layout_below="@id/course_description">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Text.UserNavigation"
+        android:id="@+id/course_information"
+        android:layout_centerHorizontal="true"/>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/list1"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_centerVertical="true"/>
+        android:layout_centerVertical="true"
+        android:layout_below="@id/course_information"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/list2"
