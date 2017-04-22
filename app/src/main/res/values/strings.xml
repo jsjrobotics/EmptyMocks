@@ -8,4 +8,18 @@
   <string name="course_overview">Course Overview</string>
   <string name="enroll">Enroll</string>
   <string name="create_my_account">Create My Account</string>
+  <string name="video">Video</string>
+  <string name="resources">Resources</string>
+  <string name="unit_1_workstation">Unit 1 Workstation</string>
+  <string name="unit_1_worksheet">Unit 1 Worksheet</string>
+  <string name="unit_1_quiz">Unit 1 Quiz</string>
+  <string name="welcome_student">Welcome Student</string>
+  <string name="sample_title">UNIT 1: Introduction to Visual Basic Integrated Development Environment</string>
+  <string name="percentage_complete_5">5% complete</string>
+  <string name="certificate_of_completion">Certificate of Completion</string>
+  <string name="introduction_to_computer_science">Introduction to Computer Science</string>
+  <string name="sample_name">John Doe</string>
+  <string name="sample_completion_description">has successfully completed a 10-hour course of computer science training.</string>
+  <string name="sample_certificate_number">Certificate No.: 00000001</string>
+  <string name="sample_score">Score: 97/100</string>
 </resources>

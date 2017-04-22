@@ -1,6 +1,8 @@
 package nyc.jsjrobotics.emptymocks.template;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,14 +22,33 @@ public abstract class DefaultView implements IDefaultView {
     }
 
     private View inflateLayout(LayoutInflater inflater, ViewGroup container) {
-        mRoot = inflater.inflate(getLayoutId(), container, false);
+        final int layoutId = getLayoutId();
+        final String layoutName = getLayoutName(container.getContext(), layoutId);
+        mRoot = inflater.inflate(layoutId, container, false);
         mLoadingView = Optional.ofNullable(mRoot.findViewById(getLoadingViewId()));
         mLoadedView = Optional.ofNullable(mRoot.findViewById(getLoadedViewId()));
         mErrorView = Optional.ofNullable(mRoot.findViewById(getErrorViewId()));
         if (mRoot == null ) {
             throw new IllegalStateException("Must define all view ids in layout");
         }
+        if (!mLoadedView.isPresent()) {
+            warn(layoutName + " No loaded view found");
+        }
+        if (!mLoadingView.isPresent()) {
+            warn(layoutName + " No loading view found");
+        }
+        if (!mErrorView.isPresent()) {
+            warn(layoutName + " No error view found");
+        }
         return mRoot;
+    }
+
+    private String getLayoutName(final Context context, final int layoutId) {
+        return context.getResources().getResourceName(layoutId);
+    }
+
+    private void warn(final String message) {
+        Log.d(getClass().getSimpleName(), message);
     }
 
     public final View getRoot() {

@@ -1,7 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFFF0000">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+  
+  <TextView
+      android:id="@+id/user_welcome"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/Text.UserNavigation"
+      android:text="@string/welcome_student"/>
 
-</LinearLayout>
+  <TextView
+      android:id="@+id/title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/Text.UserNavigation"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@id/user_welcome"
+      android:text="@string/sample_title"/>
+
+  <TextView
+      android:id="@+id/complete_percentage"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentStart="true"
+      android:text="@string/percentage_complete_5"/>
+
+  <TextView
+      android:id="@+id/video_text"
+      android:layout_width="240dp"
+      android:layout_height="135dp"
+      android:layout_margin="10dp"
+      android:background="#FF000000"
+      android:textColor="#FFFFFFFF"
+      android:layout_below="@id/title"
+      android:layout_centerHorizontal="true"
+      android:text="@string/video"
+      android:textSize="30sp"
+      android:gravity="center"/>
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/video_text"
+      android:orientation="vertical"
+      android:gravity="center"
+      android:layout_centerHorizontal="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resources"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unit_1_workstation"
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unit_1_worksheet"
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unit_1_quiz"
+        android:textSize="15sp"/>
+  </LinearLayout>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      />
+
+</RelativeLayout>
